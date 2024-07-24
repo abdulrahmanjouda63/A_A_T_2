@@ -1,0 +1,26 @@
+<div id="reco" class="py-4">
+  <div class="container">
+    <h2 class="fw-bolder text-center mb-3">RECOMMANDS COMPONENT</h2>
+    <div class="text-center d-flex align-items-center justify-content-center my-3">
+    <div class="line"></div>
+    <div class="for-icon">
+    <i class="fa-solid fa-star mt-1 mx-3"></i>
+    </div>
+    <div class="line"></div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    @for( p of RecoList ; track $index){
+        <div class="col-md-4">
+          <div class="for-img position-relative">
+            <img [src]="p.pImage" alt="img 1 "class="w-100 rounded-3"/>
+            <h2 class="text-center">Name: {{p.pName}}</h2>
+            <p class="text-center fs-3">Price: {{p.pPrice}}</p>
+            <p class="text-center fs-3">Descirption: {{p.pDesc}}</p>
+          </div>
+        </div>
+      }
+  </div>
+</div>
+
